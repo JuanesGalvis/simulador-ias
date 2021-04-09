@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador: Arquitectura IAS</title>
+    <meta name="description" content="Simulador de la arquitectura IAS mostrando el proceso paso a paso que realiza para instrucciones básicas">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador Arquitectura IAS</h1>
+        <div class="controls">
+            <button id="next">Siguiente paso ⏭</button>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </header>
+    <main>
+        <section class="IO">
+            <h1>Entrada y Salida</h1>
+            <input class="IO__Input" type="text" name="input" id="input">
+            <div class="IO__Output" id="Output"></div>
+        </section>
+
+        <section class="Memory">
+            <h2>Memoria (M)</h2>
+            <div class="Espacios">
+                <div class="MemoriaData" id="MemoriaData">
+                </div>
+                <div class="MemoriaInstr" id="MemoriaInstr">
+                </div>
+            </div>
+        </section>
+        
+        <section class="UnidadControl">
+            <div>
+                <h3>IBR</h3>
+                <p id="IBR"></p>
+            </div>
+            <div>
+                <h3>PC</h3>
+                <p id="PC"></p>
+            </div>
+            <div>
+                <h3>IR</h3>
+                <p id="IR"></p>
+            </div>
+            <div>
+                <h3>MAR</h3>
+                <p id="MAR"></p>
+            </div>
+        </section>
+
+        <section class="UnidadLogica">
+            <div class="Memorias">
+                <div>
+                    <h3>AC</h3>
+                    <p id="AC"></p>
+                </div>
+                <div>
+                    <h3>MQ</h3>
+                    <p id="MQ"></p>
+                </div>
+            </div>
+            <div>
+                <h3>MBR</h3>
+                <p id="MBR"></p>
+            </div>
+        </section>
+    </main>
+    <script src="./JS/IAS.js"></script>
+</body>
+</html>
